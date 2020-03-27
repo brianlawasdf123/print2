@@ -30,6 +30,6 @@ jobs:
       env:
         CI: true
     - uses: actions/upload-artifact@v1
-        with:
-          name: homework
-          path: homework.txt
+      with:
+        name: homework
+        path: homework.txt
