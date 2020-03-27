@@ -1,6 +1,6 @@
 
 function print() {
-    return 'hello world1';
+    return 'hello world';
 }
 
 module.exports = print;
