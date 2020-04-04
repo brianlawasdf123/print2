@@ -28,3 +28,12 @@ jobs:
     - run: npm test
       env:
         CI: true
+    - name: executing remote ssh commands using ssh key
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SUDODEV_BLAW_KEY }}
+        script: |
+            whoami
+            ls -la
